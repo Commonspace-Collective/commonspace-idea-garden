@@ -1003,3 +1003,10 @@ h1 em,
     animation-duration: 0.01ms !important;
   }
 }
+
+/* Keep search and category filtering working with custom card styles. */
+.idea-card[hidden],
+.idea-grid[hidden],
+.empty-state[hidden] {
+  display: none !important;
+}
