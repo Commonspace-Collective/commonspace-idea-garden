@@ -106,3 +106,4 @@ document.addEventListener("keydown", (event) => {
 
 // Set the correct initial result count.
 updateIdeas();
+console.log("Idea Garden script loaded!");
