@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6ef">
+  <meta name="description" content="A shared space for creative ideas to grow. Explore projects, share ideas, and build together with Commonspace Collective.">
+  <title>Idea Garden — Commonspace Collective</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Idea Garden home">
+      <span class="brand-icon" aria-hidden="true">❋</span>
+      <span>
+        <strong>idea garden</strong>
+        <small>BY COMMONSPACE COLLECTIVE</small>
+      </span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="#explore">Explore</a>
+      <a href="#about">Our philosophy</a>
+      <a class="nav-link" href="https://github.com/Commonspace-Collective/commonspace-idea-garden" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> A LITTLE SPACE TO GROW</p>
+        <h1>Every great thing starts with a <em>what if?</em></h1>
+        <p class="hero-description">
+          A shared space for curious minds and creative thinkers.
+          Explore ideas, discover your next project, and help something
+          meaningful grow.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#explore">Explore the garden <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="https://github.com/Commonspace-Collective/commonspace-idea-garden/issues/new?title=Project%20idea&body=##%20My%20idea%0A%0A**What%20is%20it%3F**%0A%0A**Who%20could%20it%20help%3F**%0A%0A**How%20could%20we%20start%3F**" target="_blank" rel="noopener noreferrer">＋ Plant an idea</a>
+        </div>
+        <p class="hero-note">✳ No experience needed. Just curiosity.</p>
+      </div>
+
+      <div class="hero-illustration" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="hill hill-back"></div>
+        <div class="hill hill-front"></div>
+        <div class="stem stem-one"><i></i><b></b></div>
+        <div class="stem stem-two"><i></i><b></b></div>
+        <div class="stem stem-three"><i></i><b></b></div>
+        <div class="flower flower-one">✿</div>
+        <div class="flower flower-two">✿</div>
+        <div class="flower flower-three">✿</div>
+        <span class="floating-leaf leaf-one">✦</span>
+        <span class="floating-leaf leaf-two">✧</span>
+      </div>
+    </section>
+
+    <section class="principles" id="about" aria-label="Our principles">
+      <article class="principle">
+        <span class="principle-icon">❋</span>
+        <div><h2>Think freely</h2><p>Every idea deserves a beginning.</p></div>
+      </article>
+      <article class="principle">
+        <span class="principle-icon">↗</span>
+        <div><h2>Build together</h2><p>Different minds grow better things.</p></div>
+      </article>
+      <article class="principle">
+        <span class="principle-icon">♡</span>
+        <div><h2>Grow openly</h2><p>Learn as you go. Share what you learn.</p></div>
+      </article>
+    </section>
+
+    <section class="explore-section" id="explore">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE IDEA COLLECTION</p>
+          <h2>Find your next <em>spark.</em></h2>
+          <p class="section-description">Little ideas, big possibilities. Find one that speaks to you.</p>
+        </div>
+        <a class="text-link" href="https://github.com/Commonspace-Collective/commonspace-idea-garden/issues/new?title=Project%20idea" target="_blank" rel="noopener noreferrer">Share an idea ↗</a>
+      </div>
+
+      <div class="controls">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <span class="visually-hidden">Search ideas</span>
+          <input id="idea-search" type="search" placeholder="Search ideas, topics, or tags..." autocomplete="off" aria-controls="idea-grid">
+          <kbd>/</kbd>
+        </label>
+
+        <div class="filters" id="category-filters" aria-label="Filter ideas by category">
+          <button class="filter-button active" type="button" data-category="All" aria-pressed="true">All ideas</button>
+          <button class="filter-button" type="button" data-category="Technology" aria-pressed="false">Technology</button>
+          <button class="filter-button" type="button" data-category="Creative" aria-pressed="false">Creative</button>
+          <button class="filter-button" type="button" data-category="Community" aria-pressed="false">Community</button>
+          <button class="filter-button" type="button" data-category="Learning" aria-pressed="false">Learning</button>
+        </div>
+      </div>
+
+      <div class="results-line">
+        <p id="results-count" aria-live="polite">6 ideas to explore</p>
+        <span>GROW AT YOUR OWN PACE ✳</span>
+      </div>
+
+      <div class="idea-grid" id="idea-grid">
+        <article class="idea-card" data-category="Technology" data-search="tiny tools utilities productivity web apps">
+          <div class="card-top"><span class="card-icon sage">⌘</span><span class="category-label">TECHNOLOGY</span></div>
+          <h3>Tiny Tools Lab</h3>
+          <p>A collection of little web tools that solve everyday annoyances, one tiny problem at a time.</p>
+          <div class="tags"><span>#webdev</span><span>#useful</span></div>
+          <div class="card-bottom"><span>Beginner friendly</span><span aria-hidden="true">↗</span></div>
+        </article>
+
+        <article class="idea-card" data-category="Creative" data-search="pixel playground generative art patterns colors design">
+          <div class="card-top"><span class="card-icon peach">▦</span><span class="category-label">CREATIVE</span></div>
+          <h3>Pixel Playground</h3>
+          <p>An interactive canvas for making colorful patterns, playful shapes, and shareable digital art.</p>
+          <div class="tags"><span>#generativeart</span><span>#design</span></div>
+          <div class="card-bottom"><span>Creative coding</span><span aria-hidden="true">↗</span></div>
+        </article>
+
+        <article class="idea-card" data-category="Community" data-search="skill swap people collaboration community teach learn">
+          <div class="card-top"><span class="card-icon lavender">↔</span><span class="category-label">COMMUNITY</span></div>
+          <h3>Skill Swap</h3>
+          <p>A friendly way for people to share what they know and learn something new from one another.</p>
+          <div class="tags"><span>#collaboration</span><span>#people</span></div>
+          <div class="card-bottom"><span>People powered</span><span aria-hidden="true">↗</span></div>
+        </article>
+
+        <article class="idea-card" data-category="Learning" data-search="learning map roadmap skills progress goals education">
+          <div class="card-top"><span class="card-icon butter">⌁</span><span class="category-label">LEARNING</span></div>
+          <h3>Learning Constellation</h3>
+          <p>Connect the things you want to learn into a personal journey of discovery and growth.</p>
+          <div class="tags"><span>#learning</span><span>#growth</span></div>
+          <div class="card-bottom"><span>Start small</span><span aria-hidden="true">↗</span></div>
+        </article>
+
+        <article class="idea-card" data-category="Technology" data-search="open source newcomer contribution finder good first issue github">
+          <div class="card-top"><span class="card-icon lavender">⌘</span><span class="category-label">TECHNOLOGY</span></div>
+          <h3>First Contribution Finder</h3>
+          <p>A guide that helps newcomers understand open source and discover beginner-sized tasks.</p>
+          <div class="tags"><span>#opensource</span><span>#beginners</span></div>
+          <div class="card-bottom"><span>Open collaboration</span><span aria-hidden="true">↗</span></div>
+        </article>
+
+        <article class="idea-card" data-category="Creative" data-search="moodboard inspiration colors images creative journal">
+          <div class="card-top"><span class="card-icon sage">✧</span><span class="category-label">CREATIVE</span></div>
+          <h3>Little Moodboard</h3>
+          <p>A tiny digital space to collect color palettes, inspiration, and the beginnings of a creative idea.</p>
+          <div class="tags"><span>#inspiration</span><span>#visuals</span></div>
+          <div class="card-bottom"><span>Made for makers</span><span aria-hidden="true">↗</span></div>
+        </article>
+      </div>
+
+      <div class="empty-state" id="empty-state" hidden>
+        <span aria-hidden="true">✿</span>
+        <h3>Nothing growing here just yet.</h3>
+        <p>Try another search or category — or plant the next idea yourself.</p>
+        <a class="button button-primary" href="https://github.com/Commonspace-Collective/commonspace-idea-garden/issues/new?title=Project%20idea" target="_blank" rel="noopener noreferrer">Suggest an idea ↗</a>
+      </div>
+
+      <div class="suggest-banner">
+        <div class="banner-flower" aria-hidden="true">✿</div>
+        <div class="banner-copy">
+          <h3>Your idea belongs here.</h3>
+          <p>It doesn't have to be perfect. Every meaningful project starts somewhere.</p>
+        </div>
+        <a class="button button-primary" href="https://github.com/Commonspace-Collective/commonspace-idea-garden/issues/new?title=Project%20idea&body=##%20My%20idea%0A%0A**What%20is%20it%3F**%0A%0A**Who%20could%20it%20help%3F**%0A%0A**How%20could%20we%20start%3F**" target="_blank" rel="noopener noreferrer">Plant an idea ↗</a>
+      </div>
+    </section>
+
+    <section class="closing">
+      <span aria-hidden="true">❋</span>
+      <p class="eyebrow">A LITTLE IDEA CAN GO A LONG WAY</p>
+      <h2>Let's make room for<br><em>what comes next.</em></h2>
+      <a class="text-link" href="https://github.com/Commonspace-Collective" target="_blank" rel="noopener noreferrer">Discover Commonspace Collective ↗</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#home">❋ Commonspace Collective</a>
+    <p>A shared space to build what matters.</p>
+    <a href="https://github.com/Commonspace-Collective/commonspace-idea-garden" target="_blank" rel="noopener noreferrer">Open source, grown together ↗</a>
+    <small>© 2026 Commonspace Collective</small>
+  </footer>
+</body>
+</html>
