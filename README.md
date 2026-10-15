@@ -1,8 +1,8 @@
-# 🌱 Commonspace Idea Garden
+# 🌱 Commonly Idea Garden
 
 ### A shared space for ideas to grow.
 
-Welcome to the **Commonspace Idea Garden** — a collaborative project by Commonspace Collective where ideas are shared, explored, and turned into something real.
+Welcome to the **Commonly Idea Garden** — a collaborative project by Commonly where ideas are shared, explored, and turned into something real.
 
 You don't need to be an expert developer to participate. Bring your curiosity, creativity, and willingness to learn.
 
